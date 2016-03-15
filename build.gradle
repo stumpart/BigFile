@@ -15,6 +15,15 @@ repositories {
     // Use 'jcenter' for resolving your dependencies.
     // You can declare any Maven/Ivy/file repository here.
     jcenter()
+    //mavenCentral()
+}
+
+test {
+    include 'com/stumpart/**'
+    testLogging {
+        // Show that tests are run in the command-line output
+        events 'started', 'passed'
+    }
 }
 
 // In this section you declare the dependencies for your production and test code
